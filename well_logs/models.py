@@ -60,6 +60,3 @@ class Data(models.Model):
     class Meta:
         ordering = ['depth']
         unique_together = ['value', 'depth', 'log']
-
-    def __str__(self):
-        return f'{self.value}'
